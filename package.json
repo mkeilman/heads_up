@@ -4,8 +4,13 @@
   "description": "Heads-up Texas holdem",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michael Keilman",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
